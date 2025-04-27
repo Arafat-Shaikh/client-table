@@ -47,8 +47,6 @@ export default function SortPanel({
 
   const handleDragEnd = (event: DragEndEvent) => {
     const { active, over } = event;
-    alert(active.id);
-    alert(over?.id);
 
     if (over && active.id !== over.id) {
       setCriteria((items) => {
